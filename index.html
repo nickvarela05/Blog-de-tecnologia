@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InnovateFlow</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="InnovateFlow - Um blog moderno focado em tendências de tecnologia, ciência, cultura e negócios." id="meta-description">
+    <link rel="canonical" href="https://www.innovateflow.com" id="canonical-link" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" id="og-type">
+    <meta property="og:title" content="InnovateFlow" id="og-title">
+    <meta property="og:description" content="Um blog moderno focado em tendências de tecnologia, ciência, cultura e negócios." id="og-description">
+    <meta property="og:image" content="https://picsum.photos/seed/innovateflow/1200/630" id="og-image">
+    <meta property="og:url" content="https://www.innovateflow.com" id="og-url">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.innovateflow.com" id="twitter-url">
+    <meta property="twitter:title" content="InnovateFlow" id="twitter-title">
+    <meta property="twitter:description" content="Um blog moderno focado em tendências de tecnologia, ciência, cultura e negócios." id="twitter-description">
+    <meta property="twitter:image" content="https://picsum.photos/seed/innovateflow/1200/630" id="twitter-image">
+
+    <!-- Schema.org markup for Google+ -->
+    <script type="application/ld+json" id="schema-json-ld"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+    <style>
+      @keyframes slide-in-right {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .animate-slide-in-right {
+        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+      @keyframes fade-scale-in {
+        from {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .animate-fade-scale-in {
+        animation: fade-scale-in 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-white dark:bg-slate-900 text-gray-900 dark:text-gray-200 font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
